@@ -1,0 +1,3 @@
+select time, (measure_value::double) as Distance
+from $__database.$__table
+where measure_name = 'distance'
