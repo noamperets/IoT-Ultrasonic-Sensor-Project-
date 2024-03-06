@@ -24,9 +24,10 @@ Connect the hardware components as follows:
 1. Open the `thingProperties.h` file and update it with your IoT Cloud credentials and Thing properties.
 
 ```cpp
-#define THING_ID ""
-#define THING_PSW ""
-#define THING_NAME "Untitled"
+const char DEVICE_LOGIN_NAME[] = ""
+const char SSID[]               = SECRET_SSID;    // Network SSID (name)
+const char PASS[]               = SECRET_OPTIONAL_PASS;    // Network password (use for WPA, or use as key for WEP)
+const char DEVICE_KEY[]  = SECRET_DEVICE_KEY;    // Secret device password
 ```
 
 2. Set up the Arduino IoT Cloud Dashboard with the necessary widgets for the `message`, `ultraSonic`, and `led` variables.
