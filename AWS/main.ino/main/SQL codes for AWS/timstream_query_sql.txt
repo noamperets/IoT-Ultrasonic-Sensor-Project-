@@ -1,0 +1,1 @@
+select * from esp8266DB."esp8266Table" where measure_name='distance'
