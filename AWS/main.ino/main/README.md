@@ -20,11 +20,12 @@ Before uploading the code to your ESP8266, ensure you have the following:
 
 ```cpp
 // secrets.h
-#define WIFI_SSID "your_wifi_ssid"
-#define WIFI_PASSWORD "your_wifi_password"
-#define MQTT_HOST "your_aws_iot_endpoint"
+const char WIFI_SSID[] = "********"; // WiFi NAME       
+const char WIFI_PASSWORD[] = "*******"; // WiFi Password
 #define THINGNAME "your_thing_name"
-const char cacert[] = "your_ca_certificate";
+const char MQTT_HOST[] = "**********"; // AWS IoT core -> Settings -> copy endpoint here
+#define THINGNAME "your_thing_name"
+const char cacert[] = "your_amazon_root_ca1_certificate";
 const char client_cert[] = "your_client_certificate";
 const char privkey[] = "your_private_key";
 ```
